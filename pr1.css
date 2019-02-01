@@ -1,0 +1,61 @@
+/*Properties of each section*/
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:3px;
+    width: 90%;
+    margin: 7em auto;
+    border: 1px solid #999;
+
+}
+
+
+
+header,
+footer {
+    padding: 20px;
+    background-color: rgb(210, 210, 210);
+    border: 1px solid rgb(205, 226, 213);
+}
+
+/*Placement of header*/
+
+header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+/*Placement of section*/
+
+section {
+    color: white;
+    grid-column: 1/4;
+    grid-row: 2;
+    background: blue;
+}
+
+/*Placement of article*/
+
+article {
+    grid-column: 1/3;
+    background-color: rgb(210, 210, 210);
+}
+
+
+/*Placement of aside*/
+
+
+aside {
+    background-color: rgb(210, 210, 210);
+    grid-column: 3;
+    grid-row: 3;
+}
+
+
+/*Placement of footer*/
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: 4;
+}
